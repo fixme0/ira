@@ -9,6 +9,45 @@
   <link href="css/contact.css" rel="stylesheet"></head>
   <body>
     <section class="hero-screen" data-parallax-img="img/contact-hero.jpeg"></section>
+<div class="wrapper-header">
+  <div class="container">
+    <header class="header">
+      <div class="header-left-interface"><a class="header-menu-btn header-menu-btn--menu" href="#">
+          <div class="header-menu-btn__icon">btn<span>btn_line</span></div>
+          <p class="header-menu-btn__text">Меню</p></a><a class="header-menu-btn header-menu-btn--search" href="#" id="open-search">
+          <svg class="header-menu-btn__icon">
+            <use xlink:href="img/sprite-svg/sprite.svg#search"></use>
+          </svg>
+          <p class="header-menu-btn__text">Поиск</p></a></div>
+      <div class="header-right-interface">
+        <div class="header-menu-btn header-menu-btn--lang">
+          <ul class="header-lang">
+            <li class="lang-item active"><a href="#">RU</a></li>
+            <li class="lang-item"><a href="#">EN</a></li>
+            <li class="lang-item"><a href="#">DE</a></li>
+          </ul>
+          <svg class="header-menu-btn__icon">
+            <use xlink:href="img/sprite-svg/sprite.svg#languages"></use>
+          </svg>
+        </div><a class="header-menu-btn header-menu-btn--services" href="services.html">
+          <p class="header-menu-btn__text">Услуги</p>
+          <svg class="header-menu-btn__icon">
+            <use xlink:href="img/sprite-svg/sprite.svg#services"></use>
+          </svg></a>
+      </div>
+    </header>
+  </div>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="menu-item current_page_item"><a href="/">Главная</a></li>
+        <li class="menu-item"><a href="services.html">Услуги</a></li>
+        <li class="menu-item"><a href="about.html">О Нас</a></li>
+        <li class="menu-item"><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
     <h1 class="hero-screen__title">КОНТАКТЫ</h1>
     <section class="section contact">
       <div class="container">
@@ -55,5 +94,21 @@
     <p class="footer-wrapper__copyright">COPYRIGHT © 2017 Mangold Sicherheitsmanagement GmbH </p>
   </div>
 </footer>
+<div class="search-block">
+  <form class="container" action="#">
+    <button class="search-block__close" type="button" id="close-search">
+      <svg>
+        <use xlink:href="img/sprite-svg/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <p class="search-block__title">Что Вы хотите найти?</p>
+    <input class="search-block__input" type="text" placeholder="|" id="input-search">
+  </form>
+  <div class="container">
+    <div class="row">
+      <ul class="search-block-list col-xl-10" id="result-search"></ul>
+    </div>
+  </div>
+</div>
   <script type="text/javascript" src="js/contact.js"></script></body>
 </html>
